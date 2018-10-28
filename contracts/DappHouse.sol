@@ -569,6 +569,7 @@ contract HouseFactory is Owned {
     function verify(address addr) public view returns (bool valid) {
         valid = _verify[addr];
     }
+    
     function deployHouseContract(
         string houseName,
         string tokenSymbol,
